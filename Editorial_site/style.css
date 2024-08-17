@@ -1,0 +1,167 @@
+body { 
+    /* background-color: black; */
+    /* color: black; */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0px 50px ;
+    width: 90%;
+    
+}
+
+.current-edition .text{
+    flex: 1;
+}
+
+.current-edition {
+    width: 500px; /* width km ki hai */
+}
+/*.current-edition img tha vo remove kiya hai, uski jagah seedha class me change kia hai*/
+.text {
+    background: linear-gradient(135deg, #0a2833, #1f4c57, #318080, #2e6271);
+    margin: 45px 0px;
+    color: white;
+    /*yha 70px ki unnecesary padding remove ki hai, jiski vajah se overlapping ho rhi thi*/
+}
+
+
+h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+p{
+    max-width: 600px;
+    text-align: justify;
+}
+
+.align.button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background: #183538;
+    color: #ffffff;
+    font-weight: bold;
+    max-width: 100%;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+button:hover {
+    transform: scale(1.02);
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (max-width: 1800px){
+    .current-edition img {
+        width: 100%;
+    }
+    .text {
+        padding: 60px; 
+    }
+    
+    p{
+        max-width: 600px;
+        text-align: justify;
+    }
+ }
+
+ @media (max-width: 750px) {
+    #background-video {
+       display: none;
+    } 
+    body {
+       background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+       background-size: cover;
+    }
+ }
+
+@media (max-width: 1400px){
+    .current-edition {
+        height: 675px; /*height adjust kri hai*/
+    }
+    .text {
+        margin-top: 70px;
+        padding: 65px; /*padding km kri hai*/
+    }
+    
+    /* h3 {
+        margin-top: 0;
+        font-size: 18px; /*font km kra hai
+        font-weight: lighter;
+    } */
+    
+    p{
+        max-width: 500px; /*width km kri hai*/
+        text-align: justify;
+    }
+}
+
+@media (max-width: 1300px){
+    .current-edition {
+        height: 690px; /*height adjust kri hai*/
+    }
+    .text {
+        padding: 40px; /*padding km kri hai*/
+    }
+    h1{
+        font-size: 20px; /*font km kra hai*/
+    }
+    
+    h3 {
+        margin-top: 0;
+        font-size: 20px; /*font km kra hai*/
+        font-weight: lighter;
+    }
+
+    h2{
+
+    }
+    
+    p{
+        max-width: 400px; /*width km kri hai*/
+        text-align: justify;
+    }
+}
